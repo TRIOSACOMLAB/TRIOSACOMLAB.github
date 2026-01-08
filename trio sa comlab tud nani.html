@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Starter Page</title>
+
+  <style>
+    :root {
+      --bg: #0f172a;       /* slate-900 */
+      --card: #111827;     /* gray-900 */
+      --text: #e5e7eb;     /* gray-200 */
+      --accent: #22d3ee;   /* cyan-400 */
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body { height: 100%; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      display: grid;
+      place-items: center;
+    }
+
+    .container {
+      width: min(900px, 92vw);
+      padding: 2rem;
+    }
+
+    header, footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 1rem 0;
+    }
+
+    .brand {
+      font-weight: 700;
+      letter-spacing: 0.2px;
+    }
+
+    nav a,
+    footer a {
+      color: var(--text);
+      text-decoration: none;
+      margin-left: 1rem;
+    }
+
+    nav a:hover,
+    footer a:hover {
+      color: var(--accent);
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid #1f2937;
+      border-radius: 14px;
+      padding: 2rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1rem;
+      border-radius: 10px;
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .btn:hover {
+      background: #0b1720;
+    }
+
+    .grid {
+      display: grid;
+      gap: 1rem;
+      margin-top: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+
+    .tile {
+      padding: 1rem;
+      border: 1px solid #1f2937;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">My Site</div>
+      <nav>
+        <a href="https://chatgpt.com/">ChatGPT</a>
+        <a href="https://google.com">Google</a>
+      </nav>
+    </header>
+
+    <main class="card">
+      <h1>TRIO SA COMLAB</h1>
+      <p>This is a minimal, responsive starter. Replace this text with your content.</p>
+      <a class="btn" href="https://www.youtube.com/watch?v=3nPcoQwp-Ao&list=RD3nPcoQwp-Ao&start_radio=1">INDI PAG IOPEN</a>
+
+      <section id="features" class="grid" aria-label="Key features">
+        <div class="tile">
+          <h3>Fast</h3>
+          <p>Loads quickly with simple, modern CSS.</p>
+        </div>
+        <div class="tile">
+          <h3>Responsive</h3>
+          <p>Adapts to phones, tablets, and desktops.</p>
+        </div>
+        <div class="tile">
+          <h3>Accessible</h3>
+          <p>Semantic HTML and ARIA labels help screen readers.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>© 2026 Your Name</span>
+      <a href="#contact">Contact</a>
+    </footer>
+  </div>
+</body>
+</html>
